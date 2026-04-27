@@ -36,6 +36,7 @@ export const createAuth = (ctx: GenericCtx<DataModel>) => {
 
   return betterAuth({
     baseURL: process.env.CONVEX_SITE_URL,
+    secret: process.env.BETTER_AUTH_SECRET,
     trustedOrigins,
     database: authComponent.adapter(ctx),
     emailAndPassword: {
