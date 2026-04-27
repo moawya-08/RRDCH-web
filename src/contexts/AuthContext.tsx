@@ -100,7 +100,7 @@ function AuthStateProvider({ children }: { children: ReactNode }) {
         throw error
       }
 
-      const authBase = (import.meta.env.VITE_CONVEX_SITE_URL || 'https://academic-dodo-992.convex.site').replace(/\/$/, '')
+      const authBase = (import.meta.env.VITE_CONVEX_SITE_URL || 'https://rightful-elephant-126.convex.site').replace(/\/$/, '')
       const payload = JSON.stringify({ provider: 'google', callbackURL })
 
       const tryEndpoint = async (path: string) => {

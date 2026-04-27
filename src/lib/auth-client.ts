@@ -2,6 +2,6 @@ import { convexClient, crossDomainClient } from '@convex-dev/better-auth/client/
 import { createAuthClient } from 'better-auth/react'
 
 export const authClient = createAuthClient({
-  baseURL: import.meta.env.VITE_CONVEX_SITE_URL || 'https://academic-dodo-992.convex.site',
+  baseURL: import.meta.env.VITE_CONVEX_SITE_URL || 'https://rightful-elephant-126.convex.site',
   plugins: [convexClient(), crossDomainClient()]
 })
